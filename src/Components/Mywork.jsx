@@ -32,7 +32,7 @@ function Mywork() {
 
 
 
-<div className='card'>
+{/* <div className='card'>
 
     <img src="images/cardimg1.png" className='card-img' alt="" />
     <div className='card-body'>
@@ -47,7 +47,7 @@ function Mywork() {
 
     </div>
 
-</div>
+</div> */}
 
 
 <div className='card'>
