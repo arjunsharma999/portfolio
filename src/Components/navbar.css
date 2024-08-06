@@ -281,7 +281,6 @@ li {
   .container-experience{
     display: flex;
     width: 60%;
-    background-color: #D3D3D3;
     border-radius: 12px;
     margin: auto;
     justify-content: center;
