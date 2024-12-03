@@ -19,9 +19,9 @@ const Home = () => {
                     <h1 className="font-bold text-4xl text-customPurple text-center mb-10">
                         <Typical
                             steps={[
-                                'Designer', 2000,
-                                'Full Stack Developer', 2000,
-                                'IoT Engineer', 2000,
+                                'Designer', 1000,
+                                'Full Stack Developer', 3000,
+                                'IoT ', 3000,
 
                             ]}
                             loop={Infinity}
@@ -87,7 +87,7 @@ const Home = () => {
     <p className="text-base md:text-lg mt-2 text-black">
       I like to code things from scratch, and enjoy bringing ideas to life in the browser.
     </p>
-    <h2 className='text-2xl text-black m-3'> Languages I Speaks!</h2>
+    <h2 className='text-2xl text-black m-3'> Languages I Speaks !</h2>
     <div className='flex text-black font-bold justify-center m-3'>
         <p>  HTML5, CSS3, JavaScript, python, </p>
         
@@ -110,12 +110,12 @@ const Home = () => {
 
   {/* IoT Engineer Section */}
   <div className="text-center">
-    <img className="mx-auto w-16 md:w-20" src="/images/raspberry-pi.png" alt="IoT" />
+    <img className="mx-auto w-16 md:w-20" src="/images/iot1.png" alt="IoT" />
     <h1 className="text-2xl md:text-4xl text-black font-bold mt-4">IoT </h1>
     <p className="text-base md:text-lg mt-2 text-black">
       I believe in designing IoT solutions ensuring seamless interactions between devices,
     </p>
-    <h2 className='text-2xl text-black m-3'> Ease To Internet! </h2>
+    <h2 className='text-2xl text-black m-3'> Ease To Internet ! </h2>
     <div className='flex text-black justify-center font-bold m-3'>
         <p>  RaspberryPi,  MicroControllers, Arduino Uno </p>
         
