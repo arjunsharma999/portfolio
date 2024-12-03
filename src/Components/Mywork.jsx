@@ -153,6 +153,7 @@ const MyWork = () => {
                 >
                   <img
                     src="/images/news.png"
+                    alt='/images'
                     className="w-100 h-60 object-cover"
                   />
                   <div
