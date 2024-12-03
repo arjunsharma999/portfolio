@@ -1,41 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Components/Navbar';
-import About from './Components/About';
-import Mywork from './Components/Mywork';
-import Experince from './Components/Experince';
-import Footer from './Components/Footer';
-import Contact from './Components/Contact';
-import particleBackground from './Components/particleBackground';
-
-
-
-
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // Correct import
+import About from "./Components/About";
+import MyWork from "./Components/Mywork";
+import Contact from "./Components/Contact";
+import Home from "./Components/Home";
 
 function App() {
-
-
   return (
-    <div className="App">
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About />} />
 
-
-           <div>
-          <particleBackground/>
-             <Navbar/>
-             <About/>
-             <Experince/>
-             <Mywork/>
-             <Contact/>
-             <Footer/>
-
-
-
-
-          </div>
-            
-         
-
-    </div>
+        <Route path="/mywork" element={<MyWork />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
