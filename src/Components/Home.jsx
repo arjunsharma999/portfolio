@@ -61,23 +61,23 @@ const Home = () => {
                 {/* The Next Section */}
                 <div
     id="next-section"
-    className="h-screen flex bg-customPurple to-white  justify-center"
+    className="h-screen flex items-center justify-center bg-customPurple text-white"
 >
-    <div className="text-center px-4 md:px-8">
+    <div className="text-center px-4 sm:px-8 w-full max-w-[600px]">
         <img
-            className="mx-auto w-[50%] sm:w-[40%] md:w-[25%]"
+            className="mx-auto w-[60%] sm:w-[50%] md:w-[60%]"
             src="/images/homee.png"
-            alt=""
+            alt="Home"
         />
-        <h1 className="text-2xl sm:text-3xl text-white md:text-4xl mb-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl mt-4">
             Hi, I'm Arjun. Nice to meet you! 
         </h1>
-    
-        <p className="text-lg sm:text-xl text-balance text-white md:text-2xl mx-auto font-sans w-[100%]">
-        I'm a web app developer who loves bringing ideas to life through functional and eye-catching digital solutions from crafting interactive user interfaces to fine-tuning backend systems, I focus on building apps that are not just easy to use but also deliver top-notch performance.
+        <p className="text-base sm:text-lg md:text-xl mt-2 leading-relaxed">
+            I'm a web app developer who loves bringing ideas to life through functional and eye-catching digital solutions. From crafting interactive user interfaces to fine-tuning backend systems, I focus on building apps that are not just easy to use but also deliver top-notch performance.
         </p>
     </div>
 </div>
+
 
 
 
@@ -89,7 +89,7 @@ const Home = () => {
     <p className="text-base md:text-lg mt-2 text-black">
       I like to code things from scratch, and enjoy bringing ideas to life in the browser.
     </p>
-    <h2 className='text-2xl text-black m-3'> Languages I Speaks !</h2>
+    <h2 className='text-2xl text-black m-3'> Languages I Speaks!</h2>
     <div className='flex text-black font-bold justify-center m-3'>
         <p>  HTML5, CSS3, JavaScript, python, </p>
         
@@ -112,12 +112,12 @@ const Home = () => {
 
   {/* IoT Engineer Section */}
   <div className="text-center">
-    <img className="mx-auto w-16 md:w-20" src="/images/iot1.png" alt="IoT" />
+    <img className="mx-auto w-16 md:w-20" src="/images/raspberry-pi.png" alt="IoT" />
     <h1 className="text-2xl md:text-4xl text-black font-bold mt-4">IoT </h1>
     <p className="text-base md:text-lg mt-2 text-black">
       I believe in designing IoT solutions ensuring seamless interactions between devices,
     </p>
-    <h2 className='text-2xl text-black m-3'> Ease To Internet ! </h2>
+    <h2 className='text-2xl text-black m-3'> Ease To Internet! </h2>
     <div className='flex text-black justify-center font-bold m-3'>
         <p>  RaspberryPi,  MicroControllers, Arduino Uno </p>
         

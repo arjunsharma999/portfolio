@@ -9,9 +9,13 @@ function Navbar() {
       {/* Navbar Section */}
       <nav className="flex items-center justify-between p-2 bg-white text-black text-lg shadow-md">
         {/* Logo */}
+        <a href="/">
         <div className="logo">
           <img src="images/logo.png" alt="Logo" className="w-16" />
         </div>
+
+        </a>
+
 
         {/* Links */}
         <div
