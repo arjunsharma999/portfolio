@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactTypingEffect from 'react-typing-effect';
+import { Typewriter } from 'react-simple-typewriter';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -11,28 +11,29 @@ const Home = () => {
 
     return (
         <>
-            <div className='min-h-screen'>
+            <div className="min-h-screen">
                 <Navbar />
                 {/* Hero Section */}
                 <div className="flex flex-col justify-center items-center h-screen">
                     {/* Typing Text */}
                     <h1 className="font-bold text-4xl text-customPurple text-center mb-10">
-                        <ReactTypingEffect
-                            text={['Designer', 'Full Stack Developer', 'IoT']}
-                            speed={100}
-                            eraseSpeed={50}
-                            typingDelay={500}
-                            eraseDelay={2000}
-                            cursorRenderer={cursor => <span>{cursor}</span>}
+                        <Typewriter
+                            words={['Designer', 'Full Stack Developer', 'IoT Enthusiast']}
+                            loop={Infinity}
+                            cursor
+                            cursorStyle="_"
+                            typeSpeed={100}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
                         />
                     </h1>
 
-                    <div className='font-bold text-2xl text-black-500 text-center mb-10'>
+                    <div className="font-bold text-2xl text-black-500 text-center mb-10">
                         I design and code beautifully simple things!
                     </div>
 
-                    <div className=''>
-                        <img src="/images/mf-avatar.svg" alt="" />
+                    <div>
+                        <img src="/images/mf-avatar.svg" alt="Avatar" />
                     </div>
 
                     {/* Bouncing Down Arrow */}
