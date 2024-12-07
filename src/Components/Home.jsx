@@ -1,5 +1,5 @@
 import React from 'react';
-import Typical from 'react-typical';
+import ReactTypingEffect from 'react-typing-effect';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -10,29 +10,30 @@ const Home = () => {
     };
 
     return (
-    <>
+        <>
             <div className='min-h-screen'>
                 <Navbar />
                 {/* Hero Section */}
                 <div className="flex flex-col justify-center items-center h-screen">
                     {/* Typing Text */}
                     <h1 className="font-bold text-4xl text-customPurple text-center mb-10">
-                        <Typical
-                            steps={[
-                                'Designer', 1000,
-                                'Full Stack Developer', 3000,
-                                'IoT ', 3000,
-
-                            ]}
-                            loop={Infinity}
-                            wrapper="p"
+                        <ReactTypingEffect
+                            text={['Designer', 'Full Stack Developer', 'IoT']}
+                            speed={100}
+                            eraseSpeed={50}
+                            typingDelay={500}
+                            eraseDelay={2000}
+                            cursorRenderer={cursor => <span>{cursor}</span>}
                         />
                     </h1>
 
-                    <div className='font-bold text-2xl text-black-500 text-center mb-10'> I design and code beautifully simple things! </div>
+                    <div className='font-bold text-2xl text-black-500 text-center mb-10'>
+                        I design and code beautifully simple things!
+                    </div>
 
-
-                    <div className=''> <img src="/images/mf-avatar.svg" alt="" /></div>
+                    <div className=''>
+                        <img src="/images/mf-avatar.svg" alt="" />
+                    </div>
 
                     {/* Bouncing Down Arrow */}
                     <div
