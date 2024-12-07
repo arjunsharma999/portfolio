@@ -1,70 +1,60 @@
-import React, { useEffect, useRef } from 'react';  
-import Typed from 'typed.js';  
-import Navbar from './Navbar';  
-import Footer from './Footer';  
-  
-const Home = () => {  
-  const scrollToSection = () => {  
-   const nextSection = document.getElementById('next-section');  
-   nextSection?.scrollIntoView({ behavior: 'smooth' });  
-  };  
-  
-  const typedRef = useRef(null);  
-  
-  useEffect(() => {  
-   const typed = new Typed(typedRef.current, {  
-    strings: ['Designer', 'Full Stack Developer', 'IoT Dev'],  
-    typeSpeed: 40,  
-    backSpeed: 0,  
-    backDelay: 2000,  
-    loop: true,  
-   });  
-  
-   return () => {  
-    typed.destroy();  
-   };  
-  }, []);  
-  
-  return (  
-   <>  
-    <div className="min-h-screen">  
-      <Navbar />  
-      {/* Hero Section */}  
-      <div className="flex flex-col justify-center items-center h-screen">  
-       {/* Typing Text */}  
-       <h1 className="font-bold text-4xl text-customPurple text-center mb-10">  
-        <span ref={typedRef} />  
-       </h1>  
-  
-       <div className="font-bold text-2xl text-black-500 text-center mb-10">  
-        I design and code beautifully simple things!  
-       </div>  
-  
-       <div>  
-        <img src="/images/mf-avatar.svg" alt="" />  
-       </div>  
-  
-       {/* Bouncing Down Arrow */}  
-       <div  
-        onClick={scrollToSection}  
-        className="cursor-pointer animate-bounce mt-10"  
-       >  
-        <svg  
-          xmlns="http://www.w3.org/2000/svg"  
-          fill="none"  
-          viewBox="0 0 24 24"  
-          strokeWidth={5}  
-          stroke="currentColor"  
-          className="w-10 h-10 text-gray-600"  
-        >  
-          <path  
-           strokeLinecap="round"  
-           strokeLinejoin="round"  
-           d="M19 9l-7 7-7-7"  
-          />  
-        </svg>  
-       </div>  
-      </div> 
+import React from 'react';
+import Typical from 'react-typical';
+import Navbar from './Navbar';
+import Footer from './Footer';
+
+const Home = () => {
+    const scrollToSection = () => {
+        const nextSection = document.getElementById('next-section');
+        nextSection?.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    return (
+    <>
+            <div className='min-h-screen'>
+                <Navbar />
+                {/* Hero Section */}
+                <div className="flex flex-col justify-center items-center h-screen">
+                    {/* Typing Text */}
+                    <h1 className="font-bold text-4xl text-customPurple text-center mb-10">
+                        <Typical
+                            steps={[
+                                'Designer', 1000,
+                                'Full Stack Developer', 3000,
+                                'IoT ', 3000,
+
+                            ]}
+                            loop={Infinity}
+                            wrapper="p"
+                        />
+                    </h1>
+
+                    <div className='font-bold text-2xl text-black-500 text-center mb-10'> I design and code beautifully simple things! </div>
+
+
+                    <div className=''> <img src="/images/mf-avatar.svg" alt="" /></div>
+
+                    {/* Bouncing Down Arrow */}
+                    <div
+                        onClick={scrollToSection}
+                        className="cursor-pointer animate-bounce mt-10"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={5}
+                            stroke="currentColor"
+                            className="w-10 h-10 text-gray-600"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M19 9l-7 7-7-7"
+                            />
+                        </svg>
+                    </div>
+                </div>
 
                 {/* The Next Section */}
                 <div
